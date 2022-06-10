@@ -3,79 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
     <title>The Clueless Cook</title>
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">the clueless cook</a></li>
-        </ul>
-        <ul>
+<header class="outer-container">
+    <nav class="navigation-container">
+        <h3>
+            <a class="navigation-logo" href="index.html">the clueless cook</a></li>
+        </h3>
+        <ul class="navigation-list">
             <li><a href="index.html">home</a></li>
             <li><a href="#">about</a></li>
             <li><a href="#">calculator</a></li>
         </ul>
     </nav>
-    <div>
-        <img src="./assets/images/hero-image.jpg" alt="pancakes">
-        <h1>delicious recipes.</h1>
-        <p>daily updated.</p>
-        <button type="button">find recipes</button>
+    <div class="hero-section__outer-container">
+        <div class="hero-section__inner-container">
+            <h1>delicious recipes.</h1>
+            <p>daily updated.</p>
+            <a href="#">
+                <button type="button" class="find-button">find recipes</button>
+            </a>
+        </div>
     </div>
-    <!--    // 3 losse cards als div-->
-    <div>
-        <img src="" alt="favoriet recept 1">
-        <div>
-            <h5>recipe title</h5>
-            <div>
-                <p>x calories | x ingredients</p>
-                <div>
-                    <img src="./assets/icons/time.png" alt="cooking time">
-                    <p>x min.</p>
+    <div class="header__featured-recipes">
+        <div class="featured-recipes__recipe-card">
+            <img src="./assets/images/recipe1.jpg" alt="favoriet recept 1">
+            <div class="featured-recipes-recipes-card__text">
+                <h5>recipe title</h5>
+                <div class="featured-recipes-recipes-card__calories-ingredients">
+                    <p>x calories | x ingredients</p>
+                    <div class="featured-recipes-recipe-card__time">
+                        <img src="./assets/icons/time.png" alt="cooking time">
+                        <p>x min.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="featured-recipes__recipe-card">
+            <img src="./assets/images/recipe2.jpg" alt="favoriet recept 2"
+                 class="featured-recipes-recipe-card__main-image">
+            <div class="featured-recipes-recipes-card__text">
+                <h5>recipe title</h5>
+                <div class="featured-recipes-recipes-card__calories-ingredients">
+                    <p>x calories | x ingredients</p>
+                    <div class="featured-recipes-recipe-card__time">
+                        <img src="./assets/icons/time.png" alt="cooking time">
+                        <p>x min.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="featured-recipes__recipe-card">
+            <img src="./assets/images/recipe3.jpg" alt="favoriet recept 3">
+            <div class="featured-recipes-recipes-card__text">
+                <h5>recipe title</h5>
+                <div class="featured-recipes-recipes-card__calories-ingredients">
+                    <p>x calories | x ingredients</p>
+                    <div class="featured-recipes-recipe-card__time">
+                        <img src="./assets/icons/time.png" alt="cooking time">
+                        <p>x min.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div>
-        <img src="" alt="favoriet recept 2">
-        <div>
-            <h5>recipe title</h5>
-            <div>
-                <p>x calories | x ingredients</p>
-                <div>
-                    <img src="./assets/icons/time.png" alt="cooking time">
-                    <p>x min.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <img src="" alt="favoriet recept 3">
-        <div>
-            <h5>recipe title</h5>
-            <div>
-                <p>x calories | x ingredients</p>
-                <div>
-                    <img src="./assets/icons/time.png" alt="cooking time">
-                    <p>x min.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--    zoekveld met selectie opties-->
 
 </header>
-<main>
-    <!--overzicht van recepturen, 20 stuks-->
-    <div>
-        <div>
+
+<main class="outer-container">
+    <div class="recipe-search__outer-container">
+        <div class="recipe-search__inner-container">
             <form action="">
                 <label for="searchRecipe">
                     <input type="text" name="searchRecipe" id="searchRecipe" placeholder="Recipe Search">
                 </label>
                 <label for="meal-type">
-                    <select name="meal-type" id="meal-type">
+                    <select name="meal-type" id="meal-type" class="recipe-search__dropdown">
                         <option value="" disabled selected>Meal type</option>
                         <option value="breakfast">Breakfast</option>
                         <option value="lunch">Lunch</option>
@@ -83,7 +88,7 @@
                     </select>
                 </label>
                 <label for="cuisine">
-                    <select name="cuisine" id="cuisine">
+                    <select name="cuisine" id="cuisine" class="recipe-search__dropdown">
                         <option value="" disabled selected>Cuisine</option>
                         <option value="waarde1">Waarde1</option>
                         <option value="waarde2">Waarde2</option>
@@ -91,7 +96,7 @@
                     </select>
                 </label>
                 <label for="diet">
-                    <select name="diet" id="diet">
+                    <select name="diet" id="diet" class="recipe-search__dropdown">
                         <option value="" disabled selected>Diet</option>
                         <option value="waarde1">Waarde1</option>
                         <option value="waarde2">Waarde2</option>
@@ -99,7 +104,7 @@
                     </select>
                 </label>
                 <label for="time">
-                    <select name="time" id="time">
+                    <select name="time" id="time" class="recipe-search__dropdown">
                         <option value="" disabled selected>Time</option>
                         <option value="waarde1">Waarde1</option>
                         <option value="waarde2">Waarde2</option>
@@ -107,84 +112,85 @@
                     </select>
                 </label>
                 <a href="#">
-                    <button type="submit">Search</button>
+                    <button type="submit" class="find-button">Search</button>
                 </a>
             </form>
         </div>
     </div>
-    <div>
-        <div>
-            <img src="" alt="placeholder-alt-text">
-            <div>
+
+    <div class="fetched-recipes__outer-container">
+        <div class="fetched-recipes__card">
+            <img src="./assets/images/recipe4.jpg" alt="placeholder-alt-text">
+            <div class="fetched-recipes-card__title">
                 <h5>recipe title</h5>
-                <div>
+                <div class="fetched-recipes-card__calories-ingredients">
                     <p>300 calories | 10 ingredients</p>
-                    <div>
+                    <div class="fetched-recipes-card__time">
                         <img src="./assets/icons/time.png" alt="time">
                         <p>20 min</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-            <img src="" alt="placeholder-alt-text">
-            <div>
+        <div class="fetched-recipes__card">
+            <img src="./assets/images/recipe5.jpg" alt="placeholder-alt-text">
+            <div class="fetched-recipes-card__title">
                 <h5>recipe title</h5>
-                <div>
+                <div class="fetched-recipes-card__calories-ingredients">
                     <p>300 calories | 10 ingredients</p>
-                    <div>
+                    <div class="fetched-recipes-card__time">
                         <img src="./assets/icons/time.png" alt="time">
                         <p>20 min</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-            <img src="" alt="placeholder-alt-text">
-            <div>
+        <div class="fetched-recipes__card">
+            <img src="./assets/images/recipe6.jpg" alt="placeholder-alt-text">
+            <div class="fetched-recipes-card__title">
                 <h5>recipe title</h5>
-                <div>
+                <div class="fetched-recipes-card__calories-ingredients">
                     <p>300 calories | 10 ingredients</p>
-                    <div>
+                    <div class="fetched-recipes-card__time">
                         <img src="./assets/icons/time.png" alt="time">
                         <p>20 min</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-            <img src="" alt="placeholder-alt-text">
-            <div>
+        <div class="fetched-recipes__card">
+            <img src="./assets/images/recipe7.jpg" alt="placeholder-alt-text">
+            <div class="fetched-recipes-card__title">
                 <h5>recipe title</h5>
-                <div>
+                <div class="fetched-recipes-card__calories-ingredients">
                     <p>300 calories | 10 ingredients</p>
-                    <div>
+                    <div class="fetched-recipes-card__time">
                         <img src="./assets/icons/time.png" alt="time">
                         <p>20 min</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-            <img src="" alt="placeholder-alt-text">
-            <div>
+        <div class="fetched-recipes__card">
+            <img src="./assets/images/recipe8.jpg" alt="placeholder-alt-text">
+            <div class="fetched-recipes-card__title">
                 <h5>recipe title</h5>
-                <div>
+                <div class="fetched-recipes-card__calories-ingredients">
                     <p>300 calories | 10 ingredients</p>
-                    <div>
+                    <div class="fetched-recipes-card__time">
                         <img src="./assets/icons/time.png" alt="time">
                         <p>20 min</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-            <img src="" alt="placeholder-alt-text">
-            <div>
+        <div class="fetched-recipes__card">
+            <img src="./assets/images/recipe9.jpg" alt="placeholder-alt-text">
+            <div class="fetched-recipes-card__title">
                 <h5>recipe title</h5>
-                <div>
+                <div class="fetched-recipes-card__calories-ingredients">
                     <p>300 calories | 10 ingredients</p>
-                    <div>
+                    <div class="fetched-recipes-card__time">
                         <img src="./assets/icons/time.png" alt="time">
                         <p>20 min</p>
                     </div>
@@ -193,44 +199,45 @@
         </div>
     </div>
 </main>
-<footer>
-    <!--contactinformatie etc, symbolen socials-->
-    <div>
-        <div>
-            <section>
+
+<footer class="outer-container">
+    <div class="footer__outer-container">
+        <div class="footer__inner-container">
+            <section class="footer__card">
                 <h4>information</h4>
-                <ul>
+                <ul class="footer-card__list">
                     <li><a href="#">Nulam a enim</a></li>
                     <li><a href="#">Quisque cursus</a></li>
                     <li><a href="#">Cras egestas</a></li>
                     <li><a href="#">Nunc vitae</a></li>
                 </ul>
             </section>
-            <section>
+            <section class="footer__card">
                 <h4>about</h4>
-                <ul>
+                <ul class="footer-card__list">
                     <li><a href="#">Quisque cursus</a></li>
                     <li><a href="#">Cras egestas</a></li>
                     <li><a href="#">Nunc vitae</a></li>
                 </ul>
             </section>
-            <section>
+            <section class="footer__card">
                 <h4>contact</h4>
-                <ul>
+                <ul class="footer-card__list">
                     <li><a href="#">Cras egestas</a></li>
                     <li><a href="#">Nunc vitae</a></li>
                     <li><a href="#">Nullam enim</a></li>
                 </ul>
             </section>
-            <section>
+            <section class="footer__card">
                 <h4>social</h4>
-                <ul>
-                    <li>
+                <ul class="footer-card__list">
+                    <li class="icons">
                         <a href="#">
                             <img src="./assets/icons/facebook.png" alt="Facebook page of The Clueless Cook">
                         </a>
                         <a href="#">
-                            <img class="social-icons" src="./assets/icons/instagram.png" alt="Instagram page of The Clueless Cook">
+                            <img src="./assets/icons/instagram.png"
+                                 alt="Instagram page of The Clueless Cook">
                         </a>
                         <a href="#">
                             <img src="./assets/icons/linkedin.png" alt="LinkedIn page of The Clueless Cook">
