@@ -75,7 +75,7 @@
 <main class="outer-container">
     <div class="recipe-search__outer-container">
         <div class="recipe-search__inner-container">
-            <form action="">
+            <form id="search-form">
                 <label for="searchRecipe">
                     <input type="text" name="searchRecipe" id="searchRecipe" placeholder="Recipe Search">
                 </label>
@@ -118,85 +118,85 @@
         </div>
     </div>
 
-    <div class="fetched-recipes__outer-container">
-        <div class="fetched-recipes__card">
-            <img src="./assets/images/recipe4.jpg" alt="placeholder-alt-text">
-            <div class="fetched-recipes-card__title">
-                <h5>recipe title</h5>
-                <div class="fetched-recipes-card__calories-ingredients">
-                    <p>300 calories | 10 ingredients</p>
-                    <div class="fetched-recipes-card__time">
-                        <img src="./assets/icons/time.png" alt="time">
-                        <p>20 min</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fetched-recipes__card">
-            <img src="./assets/images/recipe5.jpg" alt="placeholder-alt-text">
-            <div class="fetched-recipes-card__title">
-                <h5>recipe title</h5>
-                <div class="fetched-recipes-card__calories-ingredients">
-                    <p>300 calories | 10 ingredients</p>
-                    <div class="fetched-recipes-card__time">
-                        <img src="./assets/icons/time.png" alt="time">
-                        <p>20 min</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fetched-recipes__card">
-            <img src="./assets/images/recipe6.jpg" alt="placeholder-alt-text">
-            <div class="fetched-recipes-card__title">
-                <h5>recipe title</h5>
-                <div class="fetched-recipes-card__calories-ingredients">
-                    <p>300 calories | 10 ingredients</p>
-                    <div class="fetched-recipes-card__time">
-                        <img src="./assets/icons/time.png" alt="time">
-                        <p>20 min</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fetched-recipes__card">
-            <img src="./assets/images/recipe7.jpg" alt="placeholder-alt-text">
-            <div class="fetched-recipes-card__title">
-                <h5>recipe title</h5>
-                <div class="fetched-recipes-card__calories-ingredients">
-                    <p>300 calories | 10 ingredients</p>
-                    <div class="fetched-recipes-card__time">
-                        <img src="./assets/icons/time.png" alt="time">
-                        <p>20 min</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fetched-recipes__card">
-            <img src="./assets/images/recipe8.jpg" alt="placeholder-alt-text">
-            <div class="fetched-recipes-card__title">
-                <h5>recipe title</h5>
-                <div class="fetched-recipes-card__calories-ingredients">
-                    <p>300 calories | 10 ingredients</p>
-                    <div class="fetched-recipes-card__time">
-                        <img src="./assets/icons/time.png" alt="time">
-                        <p>20 min</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fetched-recipes__card">
-            <img src="./assets/images/recipe9.jpg" alt="placeholder-alt-text">
-            <div class="fetched-recipes-card__title">
-                <h5>recipe title</h5>
-                <div class="fetched-recipes-card__calories-ingredients">
-                    <p>300 calories | 10 ingredients</p>
-                    <div class="fetched-recipes-card__time">
-                        <img src="./assets/icons/time.png" alt="time">
-                        <p>20 min</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="fetched-recipes__outer-container" id="fetched-recipe-search">
+<!--        <div class="fetched-recipes__card">-->
+<!--            <img src="./assets/images/recipe4.jpg" alt="placeholder-alt-text">-->
+<!--            <div class="fetched-recipes-card__title">-->
+<!--                <h5>recipe title</h5>-->
+<!--                <div class="fetched-recipes-card__calories-ingredients">-->
+<!--                    <p>300 calories | 10 ingredients</p>-->
+<!--                    <div class="fetched-recipes-card__time">-->
+<!--                        <img src="./assets/icons/time.png" alt="time">-->
+<!--                        <p>20 min</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="fetched-recipes__card">-->
+<!--            <img src="./assets/images/recipe5.jpg" alt="placeholder-alt-text">-->
+<!--            <div class="fetched-recipes-card__title">-->
+<!--                <h5>recipe title</h5>-->
+<!--                <div class="fetched-recipes-card__calories-ingredients">-->
+<!--                    <p>300 calories | 10 ingredients</p>-->
+<!--                    <div class="fetched-recipes-card__time">-->
+<!--                        <img src="./assets/icons/time.png" alt="time">-->
+<!--                        <p>20 min</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="fetched-recipes__card">-->
+<!--            <img src="./assets/images/recipe6.jpg" alt="placeholder-alt-text">-->
+<!--            <div class="fetched-recipes-card__title">-->
+<!--                <h5>recipe title</h5>-->
+<!--                <div class="fetched-recipes-card__calories-ingredients">-->
+<!--                    <p>300 calories | 10 ingredients</p>-->
+<!--                    <div class="fetched-recipes-card__time">-->
+<!--                        <img src="./assets/icons/time.png" alt="time">-->
+<!--                        <p>20 min</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="fetched-recipes__card">-->
+<!--            <img src="./assets/images/recipe7.jpg" alt="placeholder-alt-text">-->
+<!--            <div class="fetched-recipes-card__title">-->
+<!--                <h5>recipe title</h5>-->
+<!--                <div class="fetched-recipes-card__calories-ingredients">-->
+<!--                    <p>300 calories | 10 ingredients</p>-->
+<!--                    <div class="fetched-recipes-card__time">-->
+<!--                        <img src="./assets/icons/time.png" alt="time">-->
+<!--                        <p>20 min</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="fetched-recipes__card">-->
+<!--            <img src="./assets/images/recipe8.jpg" alt="placeholder-alt-text">-->
+<!--            <div class="fetched-recipes-card__title">-->
+<!--                <h5>recipe title</h5>-->
+<!--                <div class="fetched-recipes-card__calories-ingredients">-->
+<!--                    <p>300 calories | 10 ingredients</p>-->
+<!--                    <div class="fetched-recipes-card__time">-->
+<!--                        <img src="./assets/icons/time.png" alt="time">-->
+<!--                        <p>20 min</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="fetched-recipes__card">-->
+<!--            <img src="./assets/images/recipe9.jpg" alt="placeholder-alt-text">-->
+<!--            <div class="fetched-recipes-card__title">-->
+<!--                <h5>recipe title</h5>-->
+<!--                <div class="fetched-recipes-card__calories-ingredients">-->
+<!--                    <p>300 calories | 10 ingredients</p>-->
+<!--                    <div class="fetched-recipes-card__time">-->
+<!--                        <img src="./assets/icons/time.png" alt="time">-->
+<!--                        <p>20 min</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </main>
 

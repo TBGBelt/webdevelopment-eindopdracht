@@ -107,12 +107,13 @@ h1 {
     align-items: center;
     justify-content: flex-end;
     height: 60px;
-    width: 1000px;
+    width: 100%;
+    background-color: lightgrey;
 }
 
 .navigation-logo {
-    /*flex-basis: 50%;*/
-
+    flex-basis: 50%;
+    margin-left: ;
 }
 
 .navigation-list {
@@ -120,10 +121,11 @@ h1 {
     flex-direction: row;
     justify-content: flex-end;
     flex-basis: 80%;
+    margin-right: 80px;
 }
 
 .navigation-list li a{
-    margin-left: 30px;
+    margin-left: 40px;
     /*align-self: flex-end;*/
 }
 
