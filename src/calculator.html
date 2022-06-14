@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <title>Calculator</title>
+</head>
+<body>
+<header class="outer-container">
+    <nav class="navigation-container">
+        <h3>
+            <a class="navigation-logo" href="index.html">the clueless cook</a></li>
+        </h3>
+        <ul class="navigation-list">
+            <li><a href="index.html" target="_blank">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="calculator.html">calculator</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="outer-container">
+    <div class="calculator__outer-container">
+        <div class="calculator__main-title">
+            <h1>Calorie Calculator</h1>
+        </div>
+        <div class="calculator__search">
+            <form id="searchCalorie">
+                <label for="query__calculator">
+                <input type="text" name="query__calculator" id="query__calculator"
+                placeholder="Barcode / Product">
+                </label>
+                <button type="submit" class="calculator__search-button">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="calculator__product-info">
+        <table>
+            <tr class="calculator-product-info-type">
+                <th>product</th>
+                <th>quantity</th>
+                <th>label</th>
+            </tr>
+            <tr class="calculator-product-info-data" id="calculator-product-info-data">
+                <td>Mars</td>
+                <td>60</td>
+                <td>gram</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="calculator__servings">
+        <form id="calculator__servings-form">
+            <label for="calculator-servings-form__input">
+                Amount
+                <input type="text" name="calculator-servings-form__input" id="calculator-servings-form__input">
+                serving(s)
+            </label>
+            <button type="submit" class="add-button">+ add</button>
+        </form>
+    </div>
+
+    <div class="calculator__fetchedData">
+        <table>
+            <tr class="calculator-fetchedData__type">
+                <th>product</th>
+                <th>calories</th>
+                <th>fat</th>
+                <th>carbs</th>
+            </tr>
+            <tr class="calculator-fetchedData__data">
+                <td>milk</td>
+                <td>149 kcal</td>
+                <td>8 g</td>
+                <td>12 g</td>
+            </tr>
+            <tr class="calculator-fetchedData__data">
+                <td>milk</td>
+                <td>149 kcal</td>
+                <td>8 g</td>
+                <td>12 g</td>
+            </tr>
+            <tr class="calculator-fetchedData__total-of-data">
+                <td>total</td>
+                <td>383 kcal</td>
+                <td>20 g</td>
+                <td>43 g</td>
+            </tr>
+        </table>
+    </div>
+
+</main>
+<footer class="outer-container">
+    <div class="footer__outer-container">
+        <div class="footer__inner-container">
+            <section class="footer__card">
+                <h4>information</h4>
+                <ul class="footer-card__list">
+                    <li><a href="#">Nulam a enim</a></li>
+                    <li><a href="#">Quisque cursus</a></li>
+                    <li><a href="#">Cras egestas</a></li>
+                    <li><a href="#">Nunc vitae</a></li>
+                </ul>
+            </section>
+            <section class="footer__card">
+                <h4>about</h4>
+                <ul class="footer-card__list">
+                    <li><a href="#">Quisque cursus</a></li>
+                    <li><a href="#">Cras egestas</a></li>
+                    <li><a href="#">Nunc vitae</a></li>
+                </ul>
+            </section>
+            <section class="footer__card">
+                <h4>contact</h4>
+                <ul class="footer-card__list">
+                    <li><a href="#">Cras egestas</a></li>
+                    <li><a href="#">Nunc vitae</a></li>
+                    <li><a href="#">Nullam enim</a></li>
+                </ul>
+            </section>
+            <section class="footer__card">
+                <h4>social</h4>
+                <ul class="footer-card__list">
+                    <li class="icons">
+                        <a href="#">
+                            <img class="socials" src="./assets/icons/facebook.png" alt="Facebook page of The Clueless Cook">
+                        </a>
+                        <a href="#">
+                            <img class="socials" src="./assets/icons/instagram.png"
+                                 alt="Instagram page of The Clueless Cook">
+                        </a>
+                        <a href="#">
+                            <img class="socials" src="./assets/icons/linkedin.png" alt="LinkedIn page of The Clueless Cook">
+                        </a>
+                        <a href="#">
+                            <img class="socials" src="./assets/icons/twitter.png" alt="Twitter page of The Clueless Cook">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js" type="module"></script>
+</body>
+</html>
