@@ -257,6 +257,7 @@ h1 {
     justify-content: center;
     width: 25%;
     position: relative;
+    text-decoration: none;
     }
 
 .fetched-recipes__card > img {
@@ -286,6 +287,8 @@ h1 {
 .fetched-recipes-card__time > img {
     margin-right: 5px;
 }
+
+
 
 /*footer*/
 
@@ -420,4 +423,58 @@ h1 {
     padding: 6px 8px 6px 8px;
     border-radius: 20px;
     border: 1px solid #283E53;
+}
+
+/*-----calculator------*/
+
+.calculator__outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    align-self: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.calculator__main-title,
+.calculator__search,
+.calculator__product-info,
+.calculator__servings,
+.calculator__fetchedData {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.calculator__main-title h1 {
+    color: #283E53;
+}
+
+.calculator-product-info-type th {
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+.calculator-fetchedData__type th {
+    text-align: center;
+    padding-right: 50px;
+}
+
+.calculator-fetchedData__data td{
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+.calculator-fetchedData__total-of-data td{
+    border-top: 1px solid #283E53;
+}
+
+#query__calculator,
+#calculator-servings-form__input {
+    width: 200px;
+    height: 35px;
+}
+
+.calculator__search-button {
+    margin-left: 80px;
 }
