@@ -15,4 +15,4 @@ const submitSearch = () => {
     })
 }
 
-export default submitSearch
+export default submitSearch;

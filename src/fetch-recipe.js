@@ -17,8 +17,6 @@ async function fetchRecipeData(searchQuery, chosenMealType, chosenCuisine, chose
             }
         })
 
-        // const uri = response.data.hits.recipe.uri;
-        // const id = uri.split("_")
 
         const searchResults = response.data.hits;
         console.log(searchResults)
@@ -29,12 +27,12 @@ async function fetchRecipeData(searchQuery, chosenMealType, chosenCuisine, chose
         recipeResults.replaceChildren()
 
         resultAmount.map((recipe) => {
-            const id = recipe.recipe.uri.split("_");
+            const id = recipe.recipe.uri.split("_")[1];
             const caloriesRounded = Math.round(recipe.recipe.calories);
             recipeResults.innerHTML += `
             <div class="fetched-recipes__card">        
                 <img src="${recipe.recipe.image}" alt="${recipe.recipe.label}">
-                <a id="recipe-page" href="recipe-page.html?id=${id}">
+                <a id="recipe-page" href="recipe-page.html?id=${id}" target="_blank" >
                 <div class="fetched-recipes-card__title">
                    <h5>${recipe.recipe.label}</h5>
                     <div class="fetched-recipes-card__calories-ingredients">
@@ -51,10 +49,10 @@ async function fetchRecipeData(searchQuery, chosenMealType, chosenCuisine, chose
              `
         })
     } catch (e) {
-        console.log(e)
+        console.error(e)
 
     }
 
 }
 
-export default fetchRecipeData
+export default fetchRecipeData;
