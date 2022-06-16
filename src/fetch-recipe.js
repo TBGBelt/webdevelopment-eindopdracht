@@ -49,7 +49,7 @@ async function fetchRecipeData(searchQuery, chosenMealType, chosenCuisine, chose
              `
         })
     } catch (e) {
-        console.error(e)
+        console.error(e);
 
     }
 
