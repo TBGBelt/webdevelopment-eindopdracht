@@ -7,7 +7,7 @@ const submitIngredientSearch = () => {
     submitIngredientSearch.addEventListener("submit", (e) => {
         e.preventDefault();
         fetchFoodInfo(searchIngredient.value)
-
+        console.log(searchIngredient.value)
         })
 }
 submitIngredientSearch()
