@@ -54,23 +54,66 @@ async function fetchFoodInfo (ingredient) {
             cellCarb.className = "serving-carbs"
 
 
-            let servingInfo = document.getElementsByClassName("serving-calories", "serving-fat", "serving-carbs");
+            //--------------totaal calorieen---------//
+
+            const servingInfoCal = document.getElementsByClassName("serving-calories");
             const totalCaloriesArray = []
 
-            for (let i = 0; i < servingInfo.length ; i++) {
-                totalCaloriesArray.push(servingInfo[i].innerText);
+            for (let i = 0; i < servingInfoCal.length ; i++) {
+                totalCaloriesArray.push(servingInfoCal[i].innerText);
             }
 
             const caloriesStringToNum = totalCaloriesArray.map(str => {
                 return Number(str);
             })
-            const initialValue = 0;
+            const initialValueCal = 0;
             const totalAllCalories = caloriesStringToNum.reduce(
-                (previousValue, currentValue) => previousValue + currentValue, initialValue
+                (previousValue, currentValue) => previousValue + currentValue, initialValueCal
             );
 
-            let calculatorTotalCal = document.getElementById("calculator-total-calories", "calculator-total-fat", "calculator-total-carbs");
+            let calculatorTotalCal = document.getElementById("calculator-total-calories");
             calculatorTotalCal.innerHTML = totalAllCalories;
+
+            //--------------totaal vet---------//
+
+            const servingInfoFat = document.getElementsByClassName("serving-fat");
+            const totalFatArray = []
+
+            for (let i = 0; i < servingInfoFat.length ; i++) {
+                totalFatArray.push(servingInfoFat[i].innerText);
+            }
+
+            const FatStringToNum = totalFatArray.map(str => {
+                return Number(str);
+            })
+            const initialValueFat = 0;
+            const totalAllFat = FatStringToNum.reduce(
+                (previousValue, currentValue) => previousValue + currentValue, initialValueFat
+            );
+
+            let calculatorTotalFat = document.getElementById("calculator-total-fat");
+            calculatorTotalFat.innerHTML = totalAllFat;
+
+        //    -------------totaal carbs---------
+
+            const servingInfoCarbs = document.getElementsByClassName("serving-carbs");
+            const totalCarbsArray = []
+
+            for (let i = 0; i < servingInfoCarbs.length ; i++) {
+                totalCarbsArray.push(servingInfoCarbs[i].innerText);
+            }
+
+            const CarbsStringToNum = totalCarbsArray.map(str => {
+                return Number(str);
+            })
+            const initialValueCarbs = 0;
+            const totalAllCarbs = CarbsStringToNum.reduce(
+                (previousValue, currentValue) => previousValue + currentValue, initialValueCarbs
+            );
+
+            let calculatorTotalCarbs = document.getElementById("calculator-total-carbs");
+            calculatorTotalCarbs.innerHTML = totalAllCarbs;
+
 
         })
 

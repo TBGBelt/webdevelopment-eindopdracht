@@ -32,7 +32,7 @@ async function fetchRecipeData(searchQuery, chosenMealType, chosenCuisine, chose
             recipeResults.innerHTML += `
             <div class="fetched-recipes__card">        
                 <img src="${recipe.recipe.image}" alt="${recipe.recipe.label}">
-                <a id="recipe-page" href="recipe-page.html?id=${id}" target="_blank" >
+                <a id="recipe-page" href="recipe-page.html?id=${id}" target="_blank" class="recipe-link" >
                 <div class="fetched-recipes-card__title">
                    <h5>${recipe.recipe.label}</h5>
                     <div class="fetched-recipes-card__calories-ingredients">

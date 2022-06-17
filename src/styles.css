@@ -251,6 +251,11 @@ h1 {
     margin-bottom: 50px;
 }
 
+.recipe-link {
+    text-decoration: none;
+    color: black;
+}
+
 .fetched-recipes__card {
     display: flex;
     flex-direction: column;
@@ -272,6 +277,11 @@ h1 {
     border: 1px solid #e1e1e1;
     box-shadow: 0 5px 10px -5px darkgrey;
     border-radius: 0 0 5px 5px;
+}
+
+.fetched-recipes-card__title > h5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .fetched-recipes-card__calories-ingredients {
