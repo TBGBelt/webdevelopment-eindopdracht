@@ -12,7 +12,6 @@ async function fetchFoodInfo (ingredient) {
             })
 
         const foodSearched = response.data;
-        console.log(foodSearched)
         const foodFound = foodSearched.parsed[0].food;
         const foodName = foodFound.label;
         const foodWeight = foodSearched.hints[0].measures[0].weight;

@@ -19,7 +19,6 @@ async function fetchRecipeData(searchQuery, chosenMealType, chosenCuisine, chose
 
 
         const searchResults = response.data.hits;
-        console.log(searchResults)
         const resultAmount = searchResults.slice(0, 12);
         const recipeResults = document.getElementById('fetched-recipe-search')
         const clockFace = new Image();

@@ -11,7 +11,6 @@ const submitSearch = () => {
     submitSearch.addEventListener("submit", (e) => {
         e.preventDefault();
         fetchRecipeData(searchInput.value, mealType.value, cuisineType.value, dietType.value, timeAmount.value);
-        console.log(searchInput.value, mealType.value, cuisineType.value, dietType.value, timeAmount.value)
     })
 }
 

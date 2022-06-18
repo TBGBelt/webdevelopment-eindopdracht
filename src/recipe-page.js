@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             const chosenRecipe = response.data.recipe;
             const showRecipe = document.getElementById("recipe-title");
             const titleRecipe = chosenRecipe.label;
-            console.log(titleRecipe)
             const clockFace = new Image();
             clockFace.src = require("./assets/icons/time.png");
             const timeRecipe = chosenRecipe.totalTime;
